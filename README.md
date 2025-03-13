@@ -2,5 +2,5 @@
 
 ## Actividades individuales y grupales
 
-Pablo Acevedo Areco 
-Legajo 1207827
+### Grupo 3
+Pablo Acevedo Areco - Legajo 1207827
