@@ -59,13 +59,8 @@ public class Main {
         // Cambiar modos de cada sistema
         System.out.println("\n=== CAMBIANDO MODOS DE LOS SISTEMAS ===");
         
-        System.out.println("\nSistema Boeing:");
         sistemaBoeing.cambiarModo("Crucero");
-        
-        System.out.println("\nSistema Airbus:");
-        sistemaAirbus.cambiarModo("Aproximación");
-        
-        System.out.println("\nSistema Lockheed Martin:");
+        sistemaAirbus.cambiarModo("Aproximación");        
         sistemaLockheed.cambiarModo("Altitud constante");
         
         // Mostrar información actualizada después de cambiar los modos
@@ -80,14 +75,6 @@ public class Main {
         System.out.println("\nSISTEMA 3 (después de cambio):");
         sistemaLockheed.mostrarInformacion();
         
-        // Ejemplo adicional: cambiar múltiples veces el modo de un sistema
-        System.out.println("\n=== SECUENCIA DE CAMBIOS EN SISTEMA BOEING ===");
-        sistemaBoeing.cambiarModo("Despegue");
-        sistemaBoeing.cambiarModo("Ascenso");
-        sistemaBoeing.cambiarModo("Crucero");
-        
-        System.out.println("\nEstado final del sistema Boeing:");
-        sistemaBoeing.mostrarInformacion();
     }
     
     private static void pruebasMotor() {
@@ -132,14 +119,6 @@ public class Main {
         motorRollsRoyce.detener();
         motorPrattWhitney.detener();
         
-        // Intentar detener un motor ya detenido
-        System.out.println("\n=== INTENTANDO DETENER UN MOTOR YA DETENIDO ===");
-        motorRollsRoyce.detener();
-        
-        // Intentar arrancar un motor ya arrancado
-        System.out.println("\n=== INTENTANDO ARRANCAR UN MOTOR YA ARRANCADO ===");
-        motorGE.arrancar();
-        
         // Mostrar estado final
         System.out.println("\n=== ESTADO FINAL DE LOS MOTORES ===");
         
@@ -151,7 +130,6 @@ public class Main {
         
         System.out.println("\nMOTOR 3:");
         motorPrattWhitney.mostrarInformacion();
-        
     }
     
     private static void pruebasAvion() {
@@ -222,13 +200,13 @@ public class Main {
         
         // Mostrar información de los aviones después del ensamblaje
         System.out.println("\n=== AVIONES DESPUÉS DEL ENSAMBLAJE ===");
-        System.out.println("\nAVIÓN 1 - BOEING 787:");
+        System.out.println("\nAVIÓN 1 - BOEING 787");
         boeing787.mostrarInformacion();
         
-        System.out.println("\nAVIÓN 2 - AIRBUS A350:");
+        System.out.println("\nAVIÓN 2 - AIRBUS A350");
         airbusA350.mostrarInformacion();
         
-        System.out.println("\nAVIÓN 3 - CESSNA (INCOMPLETO):");
+        System.out.println("\nAVIÓN 3 - CESSNA (INCOMPLETO)");
         avionIncompleto.mostrarInformacion();
         
         // Probar el método iniciar en los aviones
@@ -236,7 +214,6 @@ public class Main {
         boeing787.iniciar();
         airbusA350.iniciar();
         avionIncompleto.iniciar();
-        
         
     }
 }

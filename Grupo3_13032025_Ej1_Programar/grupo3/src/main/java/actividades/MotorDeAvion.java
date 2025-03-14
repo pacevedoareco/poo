@@ -46,28 +46,17 @@ package actividades;
     
     // Comportamiento: arrancar el motor
     public void arrancar() {
-        if (!encendido) {
-            encendido = true;
-            System.out.println("Motor " + marca + " arrancado. Generando " + empuje + " libras de empuje.");
-        } else {
-            System.out.println("El motor " + marca + " ya está en funcionamiento.");
-        }
+        encendido = true;
     }
     
     // Comportamiento: detener el motor
     public void detener() {
-        if (encendido) {
-            encendido = false;
-            System.out.println("Motor " + marca + " detenido.");
-        } else {
-            System.out.println("El motor " + marca + " ya está detenido.");
-        }
+        encendido = false;
     }
     
     // Método para mostrar información del motor
     public void mostrarInformacion() {
-        System.out.println("Información del Motor:");
-        System.out.println("Marca: " + marca);
+        System.out.println("Marca del motor: " + marca);
         System.out.println("Potencia: " + caballosFuerza + " hp");
         System.out.println("Empuje: " + empuje + " libras");
         System.out.println("Estado: " + (encendido ? "Encendido" : "Apagado"));

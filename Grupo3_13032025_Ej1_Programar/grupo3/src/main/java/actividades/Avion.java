@@ -128,26 +128,14 @@ public class Avion {
     }
     
     // Método para iniciar el avión
+    // Usamos salidas por consola para reflejar la operacion de encendido
+    // dado que se podria intentar iniciar un avion que no esta completo
     public void iniciar() {
         if (estaCompleto()) {
-            System.out.println("\n========= INICIANDO AVIÓN " + marca + " " + modelo + " =========");
             motor.arrancar();
             sistemaControl.cambiarModo("Despegue");
-            System.out.println("Avión listo para despegar!");
-        } else {
+            System.out.println("Avión " + marca + " " + modelo + " listo para despegar!");
+        } else 
             System.out.println("\nERROR: El avión no está completo, no se puede iniciar.");
-            
-            if (motor == null) {
-                System.out.println("- Falta instalar el motor");
-            }
-            
-            if (sistemaControl == null) {
-                System.out.println("- Falta instalar el sistema de control de vuelo");
-            }
-            
-            if (alas.size() < 2) {
-                System.out.println("- Se necesitan al menos 2 alas (actualmente hay " + alas.size() + ")");
-            }
-        }
     }
 }
