@@ -1,22 +1,22 @@
-package grupo3.actividades;
+package actividades;
 
 public class Main {
     public static void main(String[] args) {
         
         // Ejercicio 1
-        System.out.println("\n======= Ejercicio 1 =======\n");
+        System.out.println("\n======= EJERCICIO 1 =======\n");
         pruebasAla();
         
         // Ejercicio 2
-        System.out.println("\n======= Ejercicio 2 =======\n");
+        System.out.println("\n======= EJERCICIO 2 =======\n");
         pruebasSistemaDeControlDeVuelo();
         
         // Ejercicio 3
-        System.out.println("\n======= Ejercicio 3 =======\n");
+        System.out.println("\n======= EJERCICIO 3 =======\n");
         pruebasMotor();
         
         // Ejercicio 4
-        System.out.println("\n======= Ejercicio 4 =======\n");
+        System.out.println("\n======= EJERCICIO 4 =======\n");
         pruebasAvion();
     }
     

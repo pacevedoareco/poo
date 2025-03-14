@@ -1,4 +1,4 @@
-package grupo3.actividades;
+package actividades;
 
  public class MotorDeAvion {
     // Atributos

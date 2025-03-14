@@ -1,4 +1,4 @@
-package grupo3.actividades;
+package actividades;
 import java.util.ArrayList;
 import java.util.List;
 
