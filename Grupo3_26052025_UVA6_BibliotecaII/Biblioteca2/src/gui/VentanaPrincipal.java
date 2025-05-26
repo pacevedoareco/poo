@@ -12,7 +12,7 @@ public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal(Biblioteca biblioteca, Usuario usuarioActual) {
         this.biblioteca = biblioteca;
         this.usuarioActual = usuarioActual;
-        setTitle("Gestión de Biblioteca");
+        setTitle("Gestión de Biblioteca - " + usuarioActual.getNombre());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 400);
         setLocationRelativeTo(null);
@@ -64,7 +64,6 @@ public class VentanaPrincipal extends JFrame {
             });
             panelBotones.add(boton);
         }
-
         add(panelBotones, BorderLayout.CENTER);
     }
 } 

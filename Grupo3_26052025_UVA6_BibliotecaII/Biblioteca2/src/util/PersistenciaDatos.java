@@ -14,9 +14,8 @@ public class PersistenciaDatos {
 
     public static Biblioteca cargarBiblioteca() throws IOException, ClassNotFoundException {
         File archivo = new File(ARCHIVO_BIBLIOTECA);
-        if (!archivo.exists()) {
+        if (!archivo.exists())
             return new Biblioteca(); // Si no existe, devolver una nueva
-        }
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(archivo))) {
             return (Biblioteca) ois.readObject();
         }

@@ -1,9 +1,8 @@
 import model.Biblioteca;
+import model.Usuario;
 import util.PersistenciaDatos;
 import gui.VentanaPrincipal;
 import gui.SeleccionUsuarioVentana;
-import model.Usuario;
-
 import javax.swing.*;
 
 public class App {
@@ -27,7 +26,7 @@ public class App {
             ventana.setVisible(true);
         });
 
-        // Al cerrar la aplicación, guardar los datos
+        // Guardar los datos de la biblioteca al cerrar
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             try {
                 PersistenciaDatos.guardarBiblioteca(biblioteca);

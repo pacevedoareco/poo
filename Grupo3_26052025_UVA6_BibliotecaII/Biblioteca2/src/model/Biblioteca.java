@@ -19,8 +19,6 @@ public class Biblioteca implements Serializable {
     public List<Usuario> getUsuarios() { return usuarios; }
     public List<Prestamo> getPrestamos() { return prestamos; }
 
-    // Métodos para agregar, buscar, eliminar, etc. se implementarán luego
-
     // Métodos para manipulación de libros
     public void agregarLibro(Libro libro) {
         libros.add(libro);

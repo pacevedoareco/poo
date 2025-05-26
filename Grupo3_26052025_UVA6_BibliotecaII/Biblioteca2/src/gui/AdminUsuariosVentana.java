@@ -5,8 +5,8 @@ import model.Usuario;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
 import javax.swing.border.EmptyBorder;
+import java.awt.*;
 
 public class AdminUsuariosVentana extends JFrame {
     private Biblioteca biblioteca;

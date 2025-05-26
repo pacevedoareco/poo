@@ -38,10 +38,10 @@ public class HistorialPrestamosVentana extends JFrame {
         panelBusqueda.add(new JLabel("Usuario:"));
         campoUsuario = new JTextField(10);
         panelBusqueda.add(campoUsuario);
-        panelBusqueda.add(new JLabel("Desde (dd/MM/yyyy):"));
+        panelBusqueda.add(new JLabel("Desde (dd/mm/aaaa):"));
         campoFechaDesde = new JTextField(8);
         panelBusqueda.add(campoFechaDesde);
-        panelBusqueda.add(new JLabel("Hasta (dd/MM/yyyy):"));
+        panelBusqueda.add(new JLabel("Hasta (dd/mm/aaaa):"));
         campoFechaHasta = new JTextField(8);
         panelBusqueda.add(campoFechaHasta);
         JButton botonBuscar = new JButton("Buscar");
