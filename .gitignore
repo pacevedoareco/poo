@@ -1,2 +1,6 @@
 .DS_Store
 Grupo3_13032025_Ej1_Programar.zip
+*.class
+bin/
+build/
+out/
